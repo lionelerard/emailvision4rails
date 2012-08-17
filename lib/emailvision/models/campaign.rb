@@ -1,5 +1,5 @@
 class Emailvision::Campaign < Emailvision::Base
-
+	
 	attributes(
 		:name,
 		:mailinglist_id,
@@ -25,7 +25,7 @@ class Emailvision::Campaign < Emailvision::Base
 		:send_date
 	)
 
-	validate :send_date_must_be_in_the_future. :message => "must be more than 5 minutes in the future"
+	validate :send_date_must_be_in_the_future, :message => "must be more than 5 minutes in the future"
 
 	# Validate format of email address
 
@@ -36,7 +36,7 @@ class Emailvision::Campaign < Emailvision::Base
 	private
 
 	def send_date_must_be_in_the_future
-		send_date > Date.now+5.minutes # Adds 5 minutes to ensure futurness of send date between validation and publication
+		# Adds 5 minutes to ensure futurness of send date between validation and publication
+		send_date.present? ? (send_date.utc > Time.now.utc+5.minutes) : false
 	end
-
 end
