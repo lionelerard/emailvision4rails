@@ -28,13 +28,15 @@ class Emailvision::Message < Emailvision::Base
 		:body,   		    
 		:reply_to, 
 		:reply_to_email
-	)
+	)  	
 
 	# Validate format of email address	
 
 	def create
 		if valid?
-			message_id = api.post.message.create(:body => self.to_emv).call
+		  run_callbacks :create do
+		    message_id = api.post.message.create(:body => self.to_emv).call
+		  end
 			true
 		else
 			false
@@ -42,7 +44,13 @@ class Emailvision::Message < Emailvision::Base
 	end	
 
 	def update
-		(valid? and persisted?) ? api.post.message.create(:body => self.to_emv).call : false
+		if valid? and persisted?
+			run_callbacks :update do
+				api.post.message.create(:body => self.to_emv).call
+			end			
+		else
+			false
+		end
 	end
 
 	# Maybe in a helper?

@@ -30,7 +30,14 @@ class Emailvision::Campaign < Emailvision::Base
 	# Validate format of email address
 
 	def create
-		valid? ? api.post.campaign.create(:body => self.to_emv).call : false
+		if valid?
+			run_callbacks :create do
+				api.post.campaign.create(:body => self.to_emv).call
+			end
+			true
+		else
+			false
+		end
 	end
 
 	private

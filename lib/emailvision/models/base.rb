@@ -2,14 +2,16 @@ class Emailvision::Base
 	include ActiveModel::Conversion
 	include ActiveModel::AttributeMethods
 	include ActiveModel::Validations
-	include ActiveModel::Callbacks
 
+	extend ActiveModel::Callbacks
 	extend ActiveModel::Naming
 
 	class_attribute :_attributes
 	self._attributes = []
 
 	attribute_method_suffix '?'
+
+	define_model_callbacks :create, :update
 
 	def self.attributes(*names)
 		attr_accessor *names
