@@ -3,7 +3,7 @@ source "http://rubygems.org"
 gem "rails", "3.2.8"
 gem "capybara", ">= 0.4.0"
 gem "sqlite3"
-gem "emailvision"
+gem "emailvision", "~> 2.1"
 gem "premailer", "~> 1.7"
 
 gem "pry", :group => :development
