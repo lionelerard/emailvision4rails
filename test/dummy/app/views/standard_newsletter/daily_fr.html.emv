@@ -1,526 +1,362 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        
-        <title>Subject</title>
-        <style type="text/css">
-			img{display:block;} /* Force GMail to ignore image spacing. */
-			#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" button. */
-			body{width:100% !important;} /* Force Hotmail to display emails at full width */
-
-			/* Reset Styles */
-			body{margin:0; padding:0;}
-			img{border:none; outline:none; text-decoration:none;}
-
-			/* Template Styles */
-
-			body{
-				background-image:url("bg-pattern.png");
-				background-position:top left;
-				background-repeat:repeat;
-				background-color:#BBC6C2;
-			}
-
-			#container{
-				background-image:url("bg-pattern.png");
-				background-position:top left;
-				background-repeat:repeat;
-				background-color:#BBC6C2;
-				height:100%;
-				margin:0;
-				padding:0;
-				width:100%;
-			}
-
-			.title{
-				color:#F8F6F0;
-				font-family:Rockwell, Times, serif;
-				font-size:30px;
-				font-weight:normal;
-				line-height:150%;
-			}
-
-			.subTitle{
-				color:#F8F6F0;
-				font-family:Rockwell, Times, serif;
-				font-size:18px;
-				font-weight:normal;
-				line-height:150%;
-			}
-
-			#emailHeading{
-				color:#F8F6F0;
-				font-family:Rockwell, Times, serif;
-				font-size:48px;
-				font-weight:normal;
-				line-height:100%;
-			}
-
-			#emailHeading a:link, #emailHeading a:visited{
-				color:#F8F6F0;
-				font-weight:normal;
-				text-decoration:underline;
-			}
-
-			#headerImage img{
-				max-width:200px;
-			}
-
-			.productHeading{
-				color:#F8F6F0;
-				font-family:Rockwell, Times, serif;
-				font-size:30px;
-				font-weight:normal;
-				line-height:100%;
-			}
-
-			.productCopy{
-				color:#454C4A;
-				font-family:Georgia;
-				font-size:13px;
-				line-height:150%;
-			}
-
-			#templateBody a:link, #templateBody a:visited{
-				color:#E0EAEF;
-				font-weight:normal;
-				text-decoration:underline;
-			}
-
-			.productBlock img{
-				border:5px solid #DFE6E4;
-				max-width:370px;
-			}
-
-			.sidebarProductHeading{
-				color:#F8F6F0;
-				font-family:Rockwell, Times, serif;
-				font-size:18px;
-				font-weight:normal;
-				line-height:200%;
-			}
-				
-			.sidebarProductCopy{
-				color:#454C4A;
-				font-family:Georgia;
-				font-size:13px;
-				line-height:150%;
-			}
-
-			.sidebarProductCopy a:link, .sidebarProductCopy a:visited{
-				color:#E0EAEF;
-				font-weight:normal;
-				text-decoration:underline;
-			}
-
-			#sidebarProductImage{
-				display:inline;
-				max-width:150px;
-			}
-
-			#social{
-				color:#616C71;
-				font-family:Rockwell, Times, serif;
-				font-size:15px;
-				line-height:100%;
-			}
-
-			#social a:link, #social a:visited{
-				color:#616C71;
-				font-weight:normal;
-				text-decoration:none;
-			}
-
-			#utility{
-				color:#DBF7FF;
-				font-family:Georgia;
-				font-size:11px;
-				line-height:150%;
-			}
-
-			#utility a:link, #utility a:visited{
-				color:#DBF7FF;
-				font-weight:normal;
-				text-decoration:none;
-			}
-
-			#footerCopy{
-				color:#454C4A;
-				font-family:Georgia;
-				font-size:11px;
-				line-height:150%;
-			}
-
-			#footerCopy a:link, #footerCopy a:visited{
-				color:#E0EAEF;
-				font-weight:normal;
-				text-decoration:underline;
-			}
-		</style>
-    </head>
-    <body>
-    	<center>
-        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="container">
-            	<tr>
-                	<td align="center" valign="top">
-                        <table border="0" cellpadding="0" cellspacing="0" width="600">
-                            <tr>
-                                <td align="center" valign="top">
-                                    <!-- // Begin Template Header \\ -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateHeader">
-                                        <tr>
-                                            <td align="left" valign="bottom" width="400" id="emailHeading">
-                                                <div>
-                                                    BANANACO SUPPLY
-                                                </div>
-                                            </td>
-                                            <td align="center" bgcolor="#F8F6F0" valign="bottom" width="200" id="headerImage">
-                                                <br />
-                                                <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/logo.6.png" style="max-width:200px;" id="campaign-icon" />
-                                                <br />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" height="9" width="400">
-                                            </td>
-                                            <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" bgcolor="#F8F6F0" height="9" width="200">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td width="400">
-                                            </td>
-                                            <td align="center" valign="middle" height="15" width="200">
-                                                <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/shirttail_logo.gif" />
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // End Template Header \\ -->
-                                    <!-- // Begin Template Body \\ -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="600">
-                                        <tr>
-                                            <td align="left" valign="top" width="380" id="templateBody">
-                                                <table border="0" cellpadding="0" cellspacing="0" width="380">
-                                                    <tr>
-                                                        <td align="left" valign="top">
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="380" class="productBlock">
-                                                                <tr>
-                                                                    <td align="left" valign="top">
-                                                                    	<br />
-                                                                        <div class="productHeading">
-                                                                            Plushies are here!
-                                                                        </div>
-                                                                        <br />
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td align="left" valign="middle">
-                                                                        <table border="0" cellpadding="0" cellspacing="0" width="380">
-                                                                            <tr>
-                                                                                <td align="left" valign="top" width="">
-                                                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/photo_large.png" style="max-width:370px;" />
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td height="5" background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif">
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td align="left" valign="top" class="productCopy">
-                                                                    	<br />
-                                                                        <div>
-                                                                            We teamed up with Shawnimals to make 100 of these cool little MailChimp plushies. They're laser cut by robots and hand-sewn by humans. Small enough for your desk, but big enough to hug real tight.
-                                                                        </div>
-                                                                        <br />
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <!-- // Begin Repeatable \\ -->
-                                                    <tr>
-                                                        <td align="left" valign="top">
-                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/separator.gif" />                                                            	
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="380" class="productBlock">
-                                                                <tr>
-                                                                    <td align="left" valign="top">
-                                                                        <br />
-                                                                        <div class="productHeading">
-                                                                            Email Guides!
-                                                                        </div>
-                                                                        <br />
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td align="left" valign="middle">
-                                                                        <table border="0" cellpadding="0" cellspacing="0" width="380">
-                                                                            <tr>
-                                                                                <td align="left" valign="top">
-                                                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/photo2_large.png" style="max-width:370px;" />
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" height="5">
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td align="left" valign="top" class="productCopy">
-                                                                    	<br />
-                                                                        <div>
-                                                                            We're hard at work stuffing all our wisdom about email into downloadable guides that will surprise and delight you. Whether you're just getting started or trying to build your very own MailChimp, we're here to help. Learn more at <a href="http://resources.mailchimp.com/" target="_blank">MailChimp.com</a>.
-                                                                        </div>
-                                                                        <br />
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <!-- // End Repeatable \\ -->
-                                                </table>
-                                            </td>
-                                            <td align="center" valign="top" width="200">
-                                                <!-- // Begin Template Sidebar \\ -->
-                                                <table bgcolor="#A4B2AF" border="0" cellpadding="0" cellspacing="0" width="200" id="templateSidebar">
-                                                	<tr>
-                                                    	<td align="center" valign="top" width="200">
-                                                        	<br />
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="160" class="productBlock">
-                                                                <tr>
-                                                                    <td align="left" valign="top" class="sidebarProductHeading">
-                                                                        <div>
-                                                                            Paper Freddies!
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td align="left" valign="middle">
-                                                                        <table border="0" cellpadding="0" cellspacing="0" width="160">
-                                                                            <tr>
-                                                                                <td align="left" valign="top">
-                                                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/freddies.png" style="max-width:150px;" class="sidebarProductImage" />
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" height="5">
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td align="left" valign="top" class="sidebarProductCopy">
-                                                                    	<br />
-                                                                        <div>
-                                                                            All you need is quality paper, a razor blade and some tape to assemble an army of monkeys.
-                                                                        </div>
-                                                                        <br />
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <!-- // Begin Sidebar Repeatable \\ -->
-                                                    <tr>
-                                                        <td align="center" valign="top" width="200">
-                                                        	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/separator_sidebar.gif" />
-                                                            <table border="0" cellpadding="0" cellspacing="0" width="160" class="productBlock">
-                                                                <tr>
-                                                                    <td align="left" valign="top" class="sidebarProductHeading">
-                                                                        <div>
-                                                                            Login Screens!
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td align="left" valign="middle">
-                                                                        <table border="0" cellpadding="0" cellspacing="0" width="160">
-                                                                            <tr>
-                                                                                <td align="left" valign="top">
-                                                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/logins.png" style="max-width:150px;" />
-                                                                                </td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" height="5">
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td align="left" valign="top" class="sidebarProductCopy">
-                                                                    	<br />
-                                                                        <div>
-                                                                            Check out some of MailChimp's recent login screens on our <a href="http://www.flickr.com/photos/freddievonchimp/sets/72157623138750445/" target="_blank">Flickr page</a>.
-                                                                        </div>
-                                                                        <br />
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    <!-- // End Sidebar Repeatable \\ -->
-                                                    <tr>
-                                                    	<td align="center" valign="top">
-                                                        	<br />
-                                                        	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/shirttail_sidebar.gif" />
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <!-- // End Template Sidebar \\ -->
-                                            </td>
-                                        </tr>
-                                    	<tr>
-                                        	<td align="center" colspan="2" valign="middle">
-                                            	<br />
-                                            	<table bgcolor="#CFD7D3" border="0" cellpadding="10" cellspacing="0" width="600">
-                                                	<tr>
-                                                    	<td align="center" valign="middle">
-                                                        	<table background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" border="0" cellpadding="10" cellspacing="0" width="580">
-                                                            	<tr>
-                                                                	<td align="center" valign="middle">
-                                                                    	<table bgcolor="#CFD7D3" border="0" cellpadding="0" cellspacing="0" width="560">
-                                                                        	<tr>
-                                                                            	<td align="center" valign="middle">
-                                                                                	<table border="0" cellpadding="0" cellspacing="0" width="560" id="social">
-                                                                                    	<tr>
-                                                                                        	<td width="10">
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                        	<td align="center" valign="middle" width="20">
-                                                                                            	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_twitter.2.gif" />
-                                                                                            </td>
-                                                                                        	<td width="5">
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                        	<td align="left" valign="middle">
-                                                                                            	<br />
-                                                                                            	<div>
-                                                                                                	<a href="*|TWITTER:PROFILEURL|*" target="_blank">Follow on Twitter</a>
-                                                                                                </div>
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                        	<td width="15">
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                        	<td align="center" valign="middle" width="20">
-                                                                                            	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_facebook.2.gif" />
-                                                                                            </td>
-                                                                                        	<td width="5">
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                        	<td align="left" valign="middle">
-                                                                                            	<br />
-                                                                                            	<div>
-                                                                                                	<a href="*|FACEBOOK:PROFILEURL|*" target="_blank">Friend on Facebook</a>
-                                                                                                </div>
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                        	<td width="15">
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                        	<td align="center" valign="middle" width="20">
-                                                                                            	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_forward.2.gif" />
-                                                                                            </td>
-                                                                                        	<td width="5">
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                        	<td align="left" valign="middle">
-                                                                                            	<br />
-                                                                                            	<div>
-                                                                                                	<a href="*|FORWARD|*" target="_blank">Forward to Friend</a>
-                                                                                                </div>
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                            <td width="10">
-                                                                                            	<br />
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </table>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <br />
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // End Template Body \\ -->
-                                    <!-- // Begin Template Footer \\ -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateFooter">
-                                    	<tr>
-                                        	<td align="left" colspan="3" valign="top">
-                                            	<table border="0" cellpadding="0" cellspacing="0" id="utility">
-                                                	<tr>
-                                                    	<td align="center" valign="middle" width="10">
-                                                        	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_gear.1.gif" />
-                                                        </td>
-                                                        <td width="5">
-                                                        	<br />
-                                                        </td>
-                                                        <td align="left" valign="middle">
-                                                        	<div>
-                                                            	<a href="*|UPDATE_PROFILE|*" target="_blank">Update subscription preferences</a>
-                                                            </div>
-                                                        </td>
-                                                        <td width="20">
-                                                        	<br />
-                                                        </td>
-                                                        <td align="center" valign="middle" width="10">
-                                                        	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_close.1.gif" />
-                                                        </td>
-                                                        <td width="5">
-                                                        	<br />
-                                                        </td>
-                                                        <td align="left" valign="middle">
-                                                        	<div>
-                                                            	<a href="*|UNSUB|*" target="_blank">Unsubscribe</a>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                                <br />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                        	<td align="center" colspan="3" valign="bottom">
-                                            	<img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/footer_bumps.png" />
-                                            </td>
-                                        </tr>
-                                    	<tr>
-                                        	<td bgcolor="#A4B2AF" width="10">
-                                            	<br />
-                                            </td>
-                                        	<td align="left" bgcolor="#A4B2AF" valign="top" width="580">
-                                            	<br />
-                                            	<div id="footerCopy">
-                                                	Copyright &copy; 2012 my company All rights reserved.
+<center>
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="container">
+        <tr>
+            <td align="center" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" width="600">
+                    <tr>
+                        <td align="center" valign="top">
+                            <!-- // Begin Template Header \\ -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateHeader">
+                                <tr>
+                                    <td align="left" valign="bottom" width="400" id="emailHeading">
+                                        <div>
+                                            BANANACO SUPPLY
+                                        </div>
+                                    </td>
+                                    <td align="center" bgcolor="#F8F6F0" valign="bottom" width="200" id="headerImage">
+                                        <br />
+                                        <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/logo.6.png" style="max-width:200px;" id="campaign-icon" />
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" height="9" width="400">
+                                    </td>
+                                    <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" bgcolor="#F8F6F0" height="9" width="200">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="400">
+                                    </td>
+                                    <td align="center" valign="middle" height="15" width="200">
+                                        <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/shirttail_logo.gif" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- // End Template Header \\ -->
+                            <!-- // Begin Template Body \\ -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="600">
+                                <tr>
+                                    <td align="left" valign="top" width="380" id="templateBody">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="380">
+                                            <tr>
+                                                <td align="left" valign="top">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="380" class="productBlock">
+                                                        <tr>
+                                                            <td align="left" valign="top">
+                                                                <br />
+                                                                <div class="productHeading">
+                                                                    Plushies are here!
+                                                                </div>
+                                                                <br />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="380">
+                                                                    <tr>
+                                                                        <td align="left" valign="top" width="">
+                                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/photo_large.png" style="max-width:370px;" />
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="5" background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="productCopy">
+                                                                <br />
+                                                                <div>
+                                                                    We teamed up with Shawnimals to make 100 of these cool little MailChimp plushies. They're laser cut by robots and hand-sewn by humans. Small enough for your desk, but big enough to hug real tight.
+                                                                </div>
+                                                                <br />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- // Begin Repeatable \\ -->
+                                            <tr>
+                                                <td align="left" valign="top">
+                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/separator.gif" />                                                               
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="380" class="productBlock">
+                                                        <tr>
+                                                            <td align="left" valign="top">
+                                                                <br />
+                                                                <div class="productHeading">
+                                                                    Email Guides!
+                                                                </div>
+                                                                <br />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="380">
+                                                                    <tr>
+                                                                        <td align="left" valign="top">
+                                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/photo2_large.png" style="max-width:370px;" />
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" height="5">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="productCopy">
+                                                                <br />
+                                                                <div>
+                                                                    We're hard at work stuffing all our wisdom about email into downloadable guides that will surprise and delight you. Whether you're just getting started or trying to build your very own MailChimp, we're here to help. Learn more at <a href="http://resources.mailchimp.com/" target="_blank">MailChimp.com</a>.
+                                                                </div>
+                                                                <br />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- // End Repeatable \\ -->
+                                        </table>
+                                    </td>
+                                    <td align="center" valign="top" width="200">
+                                        <!-- // Begin Template Sidebar \\ -->
+                                        <table bgcolor="#A4B2AF" border="0" cellpadding="0" cellspacing="0" width="200" id="templateSidebar">
+                                            <tr>
+                                                <td align="center" valign="top" width="200">
                                                     <br />
-                                                </div>
-                                                <br />
-                                            </td>
-                                        	<td bgcolor="#A4B2AF" width="10">
-                                            	<br />
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- // End Template Footer \\ -->
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </center>
-    </body>
-</html>
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="160" class="productBlock">
+                                                        <tr>
+                                                            <td align="left" valign="top" class="sidebarProductHeading">
+                                                                <div>
+                                                                    Paper Freddies!
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="160">
+                                                                    <tr>
+                                                                        <td align="left" valign="top">
+                                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/freddies.png" style="max-width:150px;" class="sidebarProductImage" />
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" height="5">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="sidebarProductCopy">
+                                                                <br />
+                                                                <div>
+                                                                    All you need is quality paper, a razor blade and some tape to assemble an army of monkeys.
+                                                                </div>
+                                                                <br />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- // Begin Sidebar Repeatable \\ -->
+                                            <tr>
+                                                <td align="center" valign="top" width="200">
+                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/separator_sidebar.gif" />
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="160" class="productBlock">
+                                                        <tr>
+                                                            <td align="left" valign="top" class="sidebarProductHeading">
+                                                                <div>
+                                                                    Login Screens!
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="160">
+                                                                    <tr>
+                                                                        <td align="left" valign="top">
+                                                                            <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/logins.png" style="max-width:150px;" />
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" height="5">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" class="sidebarProductCopy">
+                                                                <br />
+                                                                <div>
+                                                                    Check out some of MailChimp's recent login screens on our <a href="http://www.flickr.com/photos/freddievonchimp/sets/72157623138750445/" target="_blank">Flickr page</a>.
+                                                                </div>
+                                                                <br />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!-- // End Sidebar Repeatable \\ -->
+                                            <tr>
+                                                <td align="center" valign="top">
+                                                    <br />
+                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/shirttail_sidebar.gif" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!-- // End Template Sidebar \\ -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="2" valign="middle">
+                                        <br />
+                                        <table bgcolor="#CFD7D3" border="0" cellpadding="10" cellspacing="0" width="600">
+                                            <tr>
+                                                <td align="center" valign="middle">
+                                                    <table background="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/pattern_dark_dot.gif" border="0" cellpadding="10" cellspacing="0" width="580">
+                                                        <tr>
+                                                            <td align="center" valign="middle">
+                                                                <table bgcolor="#CFD7D3" border="0" cellpadding="0" cellspacing="0" width="560">
+                                                                    <tr>
+                                                                        <td align="center" valign="middle">
+                                                                            <table border="0" cellpadding="0" cellspacing="0" width="560" id="social">
+                                                                                <tr>
+                                                                                    <td width="10">
+                                                                                        <br />
+                                                                                    </td>
+                                                                                    <td align="center" valign="middle" width="20">
+                                                                                        <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_twitter.2.gif" />
+                                                                                    </td>
+                                                                                    <td width="5">
+                                                                                        <br />
+                                                                                    </td>
+                                                                                    <td align="left" valign="middle">
+                                                                                        <br />
+                                                                                        <div>
+                                                                                            <a href="*|TWITTER:PROFILEURL|*" target="_blank">Follow on Twitter</a>
+                                                                                        </div>
+                                                                                        <br />
+                                                                                    </td>
+                                                                                    <td width="15">
+                                                                                        <br />
+                                                                                    </td>
+                                                                                    <td align="center" valign="middle" width="20">
+                                                                                        <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_facebook.2.gif" />
+                                                                                    </td>
+                                                                                    <td width="5">
+                                                                                        <br />
+                                                                                    </td>
+                                                                                    <td align="left" valign="middle">
+                                                                                        <br />
+                                                                                        <div>
+                                                                                            <a href="*|FACEBOOK:PROFILEURL|*" target="_blank">Friend on Facebook</a>
+                                                                                        </div>
+                                                                                        <br />
+                                                                                    </td>
+                                                                                    <td width="15">
+                                                                                        <br />
+                                                                                    </td>
+                                                                                    <td align="center" valign="middle" width="20">
+                                                                                        <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_forward.2.gif" />
+                                                                                    </td>
+                                                                                    <td width="5">
+                                                                                        <br />
+                                                                                    </td>
+                                                                                    <td align="left" valign="middle">
+                                                                                        <br />
+                                                                                        <div>
+                                                                                            <a href="*|FORWARD|*" target="_blank">Forward to Friend</a>
+                                                                                        </div>
+                                                                                        <br />
+                                                                                    </td>
+                                                                                    <td width="10">
+                                                                                        <br />
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br />
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- // End Template Body \\ -->
+                            <!-- // Begin Template Footer \\ -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateFooter">
+                                <tr>
+                                    <td align="left" colspan="3" valign="top">
+                                        <table border="0" cellpadding="0" cellspacing="0" id="utility">
+                                            <tr>
+                                                <td align="center" valign="middle" width="10">
+                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_gear.1.gif" />
+                                                </td>
+                                                <td width="5">
+                                                    <br />
+                                                </td>
+                                                <td align="left" valign="middle">
+                                                    <div>
+                                                        <a href="*|UPDATE_PROFILE|*" target="_blank">Update subscription preferences</a>
+                                                    </div>
+                                                </td>
+                                                <td width="20">
+                                                    <br />
+                                                </td>
+                                                <td align="center" valign="middle" width="10">
+                                                    <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/icon_close.1.gif" />
+                                                </td>
+                                                <td width="5">
+                                                    <br />
+                                                </td>
+                                                <td align="left" valign="middle">
+                                                    <div>
+                                                        <a href="*|UNSUB|*" target="_blank">Unsubscribe</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="3" valign="bottom">
+                                        <img src="http://gallery.mailchimp.com/0d61bb2ec9002f0e9872b8c36/images/footer_bumps.png" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#A4B2AF" width="10">
+                                        <br />
+                                    </td>
+                                    <td align="left" bgcolor="#A4B2AF" valign="top" width="580">
+                                        <br />
+                                        <div id="footerCopy">
+                                            Copyright &copy; 2012 my company All rights reserved.
+                                            <br />
+                                        </div>
+                                        <br />
+                                    </td>
+                                    <td bgcolor="#A4B2AF" width="10">
+                                        <br />
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- // End Template Footer \\ -->
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>

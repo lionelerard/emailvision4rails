@@ -1,4 +1,5 @@
 class StandardNewsletter < Emailvision4rails::AbstractNewsletter
+	layout 'standard'
 
 	def daily_fr(params = {})
 		puts "Daily FR ! #{params.inspect}"

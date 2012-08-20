@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+        <title>Subject</title>
+        <style type="text/css">
+			img{display:block;} /* Force GMail to ignore image spacing. */
+			#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" button. */
+			body{width:100% !important;} /* Force Hotmail to display emails at full width */
+
+			/* Reset Styles */
+			body{margin:0; padding:0;}
+			img{border:none; outline:none; text-decoration:none;}
+
+			/* Template Styles */
+
+			body{
+				background-image:url("bg-pattern.png");
+				background-position:top left;
+				background-repeat:repeat;
+				background-color:#BBC6C2;
+			}
+
+			#container{
+				background-image:url("bg-pattern.png");
+				background-position:top left;
+				background-repeat:repeat;
+				background-color:#BBC6C2;
+				height:100%;
+				margin:0;
+				padding:0;
+				width:100%;
+			}
+
+			.title{
+				color:#F8F6F0;
+				font-family:Rockwell, Times, serif;
+				font-size:30px;
+				font-weight:normal;
+				line-height:150%;
+			}
+
+			.subTitle{
+				color:#F8F6F0;
+				font-family:Rockwell, Times, serif;
+				font-size:18px;
+				font-weight:normal;
+				line-height:150%;
+			}
+
+			#emailHeading{
+				color:#F8F6F0;
+				font-family:Rockwell, Times, serif;
+				font-size:48px;
+				font-weight:normal;
+				line-height:100%;
+			}
+
+			#emailHeading a:link, #emailHeading a:visited{
+				color:#F8F6F0;
+				font-weight:normal;
+				text-decoration:underline;
+			}
+
+			#headerImage img{
+				max-width:200px;
+			}
+
+			.productHeading{
+				color:#F8F6F0;
+				font-family:Rockwell, Times, serif;
+				font-size:30px;
+				font-weight:normal;
+				line-height:100%;
+			}
+
+			.productCopy{
+				color:#454C4A;
+				font-family:Georgia;
+				font-size:13px;
+				line-height:150%;
+			}
+
+			#templateBody a:link, #templateBody a:visited{
+				color:#E0EAEF;
+				font-weight:normal;
+				text-decoration:underline;
+			}
+
+			.productBlock img{
+				border:5px solid #DFE6E4;
+				max-width:370px;
+			}
+
+			.sidebarProductHeading{
+				color:#F8F6F0;
+				font-family:Rockwell, Times, serif;
+				font-size:18px;
+				font-weight:normal;
+				line-height:200%;
+			}
+				
+			.sidebarProductCopy{
+				color:#454C4A;
+				font-family:Georgia;
+				font-size:13px;
+				line-height:150%;
+			}
+
+			.sidebarProductCopy a:link, .sidebarProductCopy a:visited{
+				color:#E0EAEF;
+				font-weight:normal;
+				text-decoration:underline;
+			}
+
+			#sidebarProductImage{
+				display:inline;
+				max-width:150px;
+			}
+
+			#social{
+				color:#616C71;
+				font-family:Rockwell, Times, serif;
+				font-size:15px;
+				line-height:100%;
+			}
+
+			#social a:link, #social a:visited{
+				color:#616C71;
+				font-weight:normal;
+				text-decoration:none;
+			}
+
+			#utility{
+				color:#DBF7FF;
+				font-family:Georgia;
+				font-size:11px;
+				line-height:150%;
+			}
+
+			#utility a:link, #utility a:visited{
+				color:#DBF7FF;
+				font-weight:normal;
+				text-decoration:none;
+			}
+
+			#footerCopy{
+				color:#454C4A;
+				font-family:Georgia;
+				font-size:11px;
+				line-height:150%;
+			}
+
+			#footerCopy a:link, #footerCopy a:visited{
+				color:#E0EAEF;
+				font-weight:normal;
+				text-decoration:underline;
+			}
+		</style>
+    </head>
+    <body>
+    	<%= yield %>
+    </body>
+</html>
