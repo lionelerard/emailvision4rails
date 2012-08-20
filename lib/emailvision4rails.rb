@@ -10,6 +10,8 @@ require 'action_mailer/collector'
 
 require 'action_view'
 
+require 'premailer'
+
 require 'emailvision'
 
 module Emailvision4rails
