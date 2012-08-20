@@ -4,6 +4,6 @@ class ComplianceTest < ActiveSupport::TestCase
 	include ActiveModel::Lint::Tests
 
 	def setup
-		@model = Emailvision::Base.new
+		@model = Emailvision4rails::Base.new
 	end
 end

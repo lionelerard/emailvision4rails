@@ -9,3 +9,5 @@ test/dummy/tmp/
 .rbenv-version
 
 .DS_Store
+
+/test/dummy/config/emailvision.yml

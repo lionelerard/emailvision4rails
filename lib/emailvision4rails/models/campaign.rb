@@ -1,4 +1,4 @@
-class Emailvision::Campaign < Emailvision::Base
+class Emailvision4rails::Campaign < Emailvision4rails::Base
 	
 	attributes(
 		:name,
@@ -29,10 +29,16 @@ class Emailvision::Campaign < Emailvision::Base
 
 	# Validate format of email address
 
+	def initialize(payload)
+		payload.each do |attr, val|
+			send("#{attr}=", val) if attributes.has_key?(attr.to_s)
+		end
+	end
+
 	def create
 		if valid?
 			run_callbacks :create do
-				api.post.campaign.create(:body => self.to_emv).call
+				api.post.campaign.create(:body => {:campaign => self.to_emv}).call
 			end
 			true
 		else
@@ -44,6 +50,6 @@ class Emailvision::Campaign < Emailvision::Base
 
 	def send_date_must_be_in_the_future
 		# Adds 5 minutes to ensure futurness of send date between validation and publication
-		send_date.present? ? (send_date.utc > Time.now.utc+5.minutes) : false
+		send_date.present? ? (send_date > Time.now+5.minutes) : false
 	end
 end

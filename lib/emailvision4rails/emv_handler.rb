@@ -1,4 +1,4 @@
-module Emailvision
+module Emailvision4rails
 	module EmvHandler
 		def self.erb_handler
 			@@erb_handler ||= ActionView::Template.registered_template_handler(:erb)

@@ -7,7 +7,7 @@ require "action_view/railtie"
 require "action_mailer/railtie"
 
 Bundler.require
-require "emailvision"
+require "emailvision4rails"
 
 module Dummy
   class Application < Rails::Application

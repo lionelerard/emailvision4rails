@@ -1,4 +1,4 @@
-class Emailvision::Message < Emailvision::Base
+class Emailvision4rails::Message < Emailvision4rails::Base
 
 	attributes(
 		:name,
@@ -16,8 +16,7 @@ class Emailvision::Message < Emailvision::Base
 		:hotmail_unsub_url,
 		:type,
 		:hotmail_unsub_flg,
-		:is_bounceback,
-		:message_id
+		:is_bounceback
 	)
 
 	validates_presence_of(
@@ -32,10 +31,17 @@ class Emailvision::Message < Emailvision::Base
 
 	# Validate format of email address	
 
+	def initialize(body, payload)
+		self.body = body
+		payload.each do |attr, val|
+			send("#{attr}=", val) if attributes.has_key?(attr.to_s)
+		end
+	end
+
 	def create
 		if valid?
 		  run_callbacks :create do
-		    message_id = api.post.message.create(:body => self.to_emv).call
+		    self.id = api.post.message.create(:body => {:message => self.to_emv}).call
 		  end
 			true
 		else

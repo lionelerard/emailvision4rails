@@ -1,4 +1,4 @@
-class Emailvision::Base
+class Emailvision4rails::Base
 	include ActiveModel::Conversion
 	include ActiveModel::AttributeMethods
 	include ActiveModel::Validations
@@ -32,15 +32,15 @@ class Emailvision::Base
 	end
 
 	def to_emv
-		attributes_present = attributes.reject {|k,v| v.nil?}
-		{:message => attributes_present}
+		attributes.reject {|k,v| v.nil?}
 	end
 
 	protected
 
 	def api
 		@api ||= Emailvision::Api.new :endpoint => "apiccmd"
-		@api.open_connection unless @emv.connected?
+		@api.open_connection unless @api.connected?
+		@api
 	end
 
 	def attribute?(attribute)
