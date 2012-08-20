@@ -13,4 +13,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency("railties", "~> 3.2")
   s.add_dependency("emailvision", "~> 2.1")
+  s.add_dependency("premailer", "~> 1.7")
 end

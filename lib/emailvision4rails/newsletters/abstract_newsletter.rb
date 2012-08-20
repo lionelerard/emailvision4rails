@@ -41,8 +41,15 @@ module Emailvision4rails
 			lookup_context.locale = params.delete(:language) if params[:language]
 
 			responses = collect_responses(lookup_context.formats)
-			message.parts = responses
 
+			# Inline CSS
+			responses[:html] = Premailer.new(responses[:html], 
+				:warn_level => Premailer::Warnings::SAFE,
+				:with_html_string => true
+			)
+
+
+			message.parts = responses
 			message.payload = params
 
 			message
