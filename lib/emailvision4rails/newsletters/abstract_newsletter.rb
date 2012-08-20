@@ -3,6 +3,7 @@ module Emailvision4rails
 		abstract!
 
 		include AbstractController::Rendering
+		include AbstractController::Layouts
 
 		append_view_path "#{Rails.root}/app/views"
 
