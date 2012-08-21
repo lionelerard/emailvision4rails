@@ -2,7 +2,6 @@ class StandardNewsletter < Emailvision4rails::AbstractNewsletter
 	layout 'standard'
 
 	def daily_fr(params = {})
-		puts "Daily FR ! #{params.inspect}"
 		newsletter(
 			:message => default_message_params,
 			:campaign => default_campaign_params.merge(:send_date => Time.now+1.day, :mailinglist_id => 24486)
