@@ -15,9 +15,11 @@ require 'premailer'
 require 'emailvision'
 
 module Emailvision4rails
+	# Base
 	autoload :EmvHandler, 'emailvision4rails/emv_handler'
 	autoload :Collector, 'emailvision4rails/collector'
 	autoload :Newsletter, 'emailvision4rails/newsletter'
+	autoload :Configuration, 'emailvision4rails/configuration'
 
 	# Models
 	autoload :Base, 'emailvision4rails/models/base'
@@ -27,5 +29,7 @@ module Emailvision4rails
 	# Newsletters (Controller)
 	autoload :AbstractNewsletter, 'emailvision4rails/newsletters/abstract_newsletter'
 
-	ActionView::Template.register_template_handler :emv, EmvHandler
+	ActionView::Template.register_template_handler :emv, EmvHandler	
+
+	require 'emailvision4rails/railtie'
 end
