@@ -112,11 +112,11 @@ Attributes
 
 ```ruby
 message = Emailvision4rails::Message.new(
+	message_content,
 	:name => 'My message',
 	:subject => 'Hello',
 	:from => 'Bastien Gysler', 
 	:from_email => 'basgys@gmail.com',
-	:body => my_body,
 	:reply_to => 'Bastien Gysler',
 	:reply_to_email => 'basgys@gmail.com'
 )
