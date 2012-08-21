@@ -1,3 +1,6 @@
+$LOAD_PATH.unshift 'lib'
+require 'emailvision4rails/version'
+
 Gem::Specification.new do |s|
   s.name = "emailvision4rails"
   s.summary = "Emailvision library for Ruby on Rails"
