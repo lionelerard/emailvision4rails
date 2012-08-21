@@ -22,6 +22,20 @@ Past this line to your Gemfile
 gem 'emailvision4rails'
 ```
 
+Generator
+---------
+
+Emailvision4rails is bundled with a newsletter generator.
+
+```shell
+$ rails generate newsletter standard daily weekly
+	create  app/newsletters/standard_newsletter.rb
+	create  app/views/standard_newsletter/daily.html.emv
+	create  app/views/standard_newsletter/daily.text.emv
+	create  app/views/standard_newsletter/weekly.html.emv
+	create  app/views/standard_newsletter/weekly.text.emv
+```
+
 Models
 ------
 
@@ -107,7 +121,7 @@ else
 end
 ```
 
-Controller (Newsletter)
+Newsletter (Controller)
 -----------------------
 
 Newsletters work like mailers. These are stored in the *newsletters* directory (/app/newsletters)
@@ -154,6 +168,22 @@ end
 ```ruby
 StandardNewsletter.daily_fr.publish
 ```
+
+Views
+-----
+
+Views are stored in app/views and are suffixed by _newsletter.
+
+Two formats are available which are html and text and both must be present. Otherwise and ActionView::MissingTemplate error will be raised.
+
+Template engine that should be used is emv, but others work too.
+
+EMV template engine
+-------------------
+
+EMV is an engine built on top of ERB, but it also adds CSS inlining for HTML files.
+
+It means you can create your views just like others and EMV will do the dirty work to be "email ready".
 
 Author
 ------
