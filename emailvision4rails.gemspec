@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name = "emailvision4rails"
-  s.summary = "Manage campaigns and messages from your rails application"
-  s.description = "Manage campaigns and messages from your rails application" 
-  s.version = "0.0.1"
+  s.summary = "Emailvision library for Ruby on Rails"
+  s.description = "Manage Emailvision campaigns and messages from your rails application" 
+  s.version = Emailvision4rails::Version
   s.date = Time.now.strftime('%Y-%m-%d')
 
   s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
@@ -10,7 +10,8 @@ Gem::Specification.new do |s|
 	
 	s.authors     = ['Bastien Gysler']  
 	s.email       = "basgys@gmail.com"
-  s.homepage    = "http://www.bastiengysler.com"  
+  s.homepage    = "https://github.com/basgys/emailvision4rails"
+
   s.add_dependency("rails", "~> 3.2")
 
   s.add_dependency("emailvision", "~> 2.1")
