@@ -1,3 +1,7 @@
+require 'abstract_controller'
+require 'action_view'
+require 'action_mailer/collector'
+
 module Emailvision4rails
 	class AbstractNewsletter < ::AbstractController::Base
 		abstract!

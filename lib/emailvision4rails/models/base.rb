@@ -1,3 +1,11 @@
+require 'active_model/conversion'
+require 'active_model/attribute_methods'
+require 'active_model/naming'
+require 'active_model/translation'
+require 'active_model/validator'
+require 'active_model/validations'
+require 'active_model/callbacks'
+
 class Emailvision4rails::Base
 	include ActiveModel::Conversion
 	include ActiveModel::AttributeMethods

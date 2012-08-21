@@ -1,3 +1,5 @@
+require 'rails'
+
 module Emailvision4rails
 	class Railtie < Rails::Railtie
 	

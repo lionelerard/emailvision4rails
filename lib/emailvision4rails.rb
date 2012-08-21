@@ -1,17 +1,6 @@
 require 'rails'
-
-require 'active_model/conversion'
-require 'active_model/attribute_methods'
-require 'active_model/validations'
-require 'active_model/callbacks'
-
-require 'abstract_controller/rendering'
-require 'action_mailer/collector'
-
 require 'action_view'
-
 require 'premailer'
-
 require 'emailvision'
 
 module Emailvision4rails
@@ -20,6 +9,7 @@ module Emailvision4rails
 	autoload :Collector, 'emailvision4rails/collector'
 	autoload :Newsletter, 'emailvision4rails/newsletter'
 	autoload :Configuration, 'emailvision4rails/configuration'
+	autoload :Version, 'emailvision4rails/version'
 
 	# Models
 	autoload :Base, 'emailvision4rails/models/base'
@@ -31,5 +21,7 @@ module Emailvision4rails
 
 	ActionView::Template.register_template_handler :emv, EmvHandler	
 
-	require 'emailvision4rails/railtie'
+	if defined?(Rails)
+		require 'emailvision4rails/railtie'
+	end
 end

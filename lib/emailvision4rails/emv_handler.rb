@@ -1,3 +1,5 @@
+require 'action_view/template'
+
 module Emailvision4rails
 	module EmvHandler
 		def self.erb_handler
