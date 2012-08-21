@@ -22,6 +22,13 @@ Past this line to your Gemfile
 gem 'emailvision4rails'
 ```
 
+Setup
+-----
+
+```shell
+$ rails generate emailvision4rails:setup
+```
+
 Generator
 ---------
 
