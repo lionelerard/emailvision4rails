@@ -31,7 +31,7 @@ class Emailvision4rails::Message < Emailvision4rails::Base
 
 	# Validate format of email address	
 
-	def initialize(body, payload)
+	def initialize(body = "", payload = {})
 		self.body = body
 		payload.each do |attr, val|
 			send("#{attr}=", val) if attributes.has_key?(attr.to_s)

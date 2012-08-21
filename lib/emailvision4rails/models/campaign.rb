@@ -29,7 +29,7 @@ class Emailvision4rails::Campaign < Emailvision4rails::Base
 
 	# Validate format of email address
 
-	def initialize(payload)
+	def initialize(payload = {})
 		payload.each do |attr, val|
 			send("#{attr}=", val) if attributes.has_key?(attr.to_s)
 		end
