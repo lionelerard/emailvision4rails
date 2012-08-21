@@ -43,13 +43,6 @@ module Emailvision4rails
 
 			responses = collect_responses(lookup_context.formats)
 
-			# Inline CSS
-			responses[:html] = Premailer.new(responses[:html], 
-				:warn_level => Premailer::Warnings::SAFE,
-				:with_html_string => true
-			)
-
-
 			message.parts = responses
 			message.payload = params
 
