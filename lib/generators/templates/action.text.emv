@@ -1,0 +1,3 @@
+<%%= @greeting %>
+
+I am <%= class_name %> in text format

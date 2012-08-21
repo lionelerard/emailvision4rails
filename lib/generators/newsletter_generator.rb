@@ -10,7 +10,7 @@ class NewsletterGenerator < Rails::Generators::NamedBase
 	def create_view_files
 		actions.each do |action|
 			available_formats.each do |format|
-				create_file  File.join('app/views', class_path, "#{file_name}_newsletter", "#{action}.#{format}.emv"), "#{action}.#{format}"
+				template "action.#{format}.emv", File.join('app/views', class_path, "#{file_name}_newsletter", "#{action}.#{format}.emv")
 			end			
 		end
 	end	

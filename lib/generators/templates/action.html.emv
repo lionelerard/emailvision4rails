@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%%= @greeting %> from <%= class_name %></title>
+	</head>
+
+	<body>
+		<h1><%%= @greeting %></h1>
+		<p>I am <%= class_name %> in <b>HTML</b> format</p>
+	</body>
+</html>
