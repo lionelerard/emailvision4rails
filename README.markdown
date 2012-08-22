@@ -3,8 +3,6 @@ Emailvision ruby on rails library
 
 Emailvision4rails is a library used to manage messages and campaigns or more simply newsletters from your rails application.
 
-/!\ Not released yet /!\
-
 Install
 -------
 
@@ -141,6 +139,7 @@ $ rails generate newsletter standard
 
 ```ruby
 class StandardNewsletter < Emailvision4rails::AbstractNewsletter
+	layout 'standard'
 
 	def daily_fr(params = {})
 		newsletter(
@@ -172,8 +171,16 @@ class StandardNewsletter < Emailvision4rails::AbstractNewsletter
 end
 ```
 
+Publication
+
 ```ruby
 StandardNewsletter.daily_fr.publish
+```
+
+Preview
+
+```ruby
+StandardNewsletter.daily_fr.to_html # or to_text
 ```
 
 Views
@@ -191,6 +198,11 @@ EMV template engine
 EMV is an engine built on top of ERB, but it also adds CSS inlining for HTML files.
 
 It means you can create your views just like others and EMV will do the dirty work to be "email ready".
+
+Meta
+----
+
+This project uses [Semantic Versioning](http://semver.org/).
 
 Author
 ------
