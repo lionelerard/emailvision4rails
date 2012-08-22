@@ -27,5 +27,17 @@ module Emailvision4rails
 			end.join("\n")
 		end
 
+		def to_html
+			parts[:html]
+		end
+
+		def to_text
+			parts[:text]
+		end		
+
+		def to_s
+			content
+		end
+
 	end
 end
