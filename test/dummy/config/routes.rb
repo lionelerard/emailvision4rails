@@ -1,6 +1,7 @@
 Dummy::Application.routes.draw do
 
   get '/home/:action', :to => 'home'
+  root :to => "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
