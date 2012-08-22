@@ -6,6 +6,7 @@ module Emailvision4rails
 	class AbstractNewsletter < ::AbstractController::Base
 		abstract!
 
+		include AbstractController::Logger
 		include AbstractController::Rendering
 		include AbstractController::Layouts
 
