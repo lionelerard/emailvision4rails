@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency("emailvision", "~> 2.1")
   s.add_dependency("premailer", "~> 1.7")
-  s.add_dependency("nokogiri", "~> 1.5")
+  s.add_dependency("hpricot", "~> 0.8")
 end
