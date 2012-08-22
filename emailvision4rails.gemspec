@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version = Emailvision4rails::Version
   s.date = Time.now.strftime('%Y-%m-%d')
 
-  s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
+  s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.markdown"]
   s.require_path = 'lib'  
 	
 	s.authors     = ['Bastien Gysler']  
