@@ -35,9 +35,9 @@ module Emailvision4rails
 	    process(method_name, *args) if method_name
 	  end
 
-		def process(*args)
+		def process(method_name, *args)
 			lookup_context.skip_default_locale!
-			super
+			super(method_name, *args)
 		end
 
 		def newsletter(params = {})
