@@ -52,6 +52,7 @@ GEM
     erubis (2.7.0)
     ffi (1.1.5)
     hike (1.2.1)
+    hpricot (0.8.6)
     htmlentities (4.3.1)
     httparty (0.8.3)
       multi_json (~> 1.0)
@@ -130,6 +131,7 @@ PLATFORMS
 DEPENDENCIES
   capybara (>= 0.4.0)
   emailvision (~> 2.1)
+  hpricot (~> 0.8)
   premailer (~> 1.7)
   pry
   rails (= 3.2.8)

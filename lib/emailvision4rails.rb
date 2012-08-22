@@ -9,7 +9,8 @@ module Emailvision4rails
 	autoload :Collector, 'emailvision4rails/collector'
 	autoload :Newsletter, 'emailvision4rails/newsletter'
 	autoload :Configuration, 'emailvision4rails/configuration'
-	autoload :Version, 'emailvision4rails/version'
+	autoload :Premailer, 'emailvision4rails/premailer'
+	autoload :Version, 'emailvision4rails/version'	
 
 	# Models
 	autoload :Base, 'emailvision4rails/models/base'

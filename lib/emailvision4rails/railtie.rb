@@ -3,7 +3,7 @@ require 'rails'
 module Emailvision4rails
 	class Railtie < Rails::Railtie
 	
-	  config.to_prepare do
+	  config.to_prepare do	  	
 	    file = "#{Rails.root}/config/emailvision.yml"
 	    
 	    if File.exist?(file)
@@ -15,6 +15,7 @@ module Emailvision4rails
   	    Configuration.password     = config['password']
   	    Configuration.key          = config['key']
   	    Configuration.debug        = config['debug']
+  	    Configuration.encoding     = Rails.configuration.encoding || 'utf-8'
 	    end	    
 	  end		
 	
