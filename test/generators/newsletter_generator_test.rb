@@ -4,7 +4,7 @@ require 'generators/newsletter_generator'
 class NewsletterGeneratorTest < Rails::Generators::TestCase
   tests NewsletterGenerator
 
-  destination File.expand_path('../../../tmp', File.dirname(__FILE__))
+  destination File.join(Rails.root, "tmp")
   setup :prepare_destination  
 
   test 'generation for newsletter with no parameters' do
@@ -18,7 +18,7 @@ class NewsletterGeneratorTest < Rails::Generators::TestCase
     assert_file "app/views/test_newsletter/daily.html.emv"
     assert_file "app/views/test_newsletter/daily.text.emv"
     assert_file "app/views/test_newsletter/weekly.html.emv"
-    assert_file "app/views/test_newsletter/weekly.text.emv"    
+    assert_file "app/views/test_newsletter/weekly.text.emv"
   end  
 
   test 'generation for namespaced newsletter with parameters' do
@@ -27,7 +27,7 @@ class NewsletterGeneratorTest < Rails::Generators::TestCase
     assert_file "app/views/admin/test_newsletter/daily.html.emv"
     assert_file "app/views/admin/test_newsletter/daily.text.emv"
     assert_file "app/views/admin/test_newsletter/weekly.html.emv"
-    assert_file "app/views/admin/test_newsletter/weekly.text.emv"    
+    assert_file "app/views/admin/test_newsletter/weekly.text.emv"
   end    
 
 end

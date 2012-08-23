@@ -1,10 +1,10 @@
 require 'test_helper'
 require 'generators/emailvision4rails/setup_generator'
 
-class NewsletterGeneratorTest < Rails::Generators::TestCase
+class SetupGeneratorTest < Rails::Generators::TestCase
   tests Emailvision4rails::SetupGenerator
 
-  destination File.expand_path('../../../tmp', __FILE__)
+  destination File.join(Rails.root, "tmp")
   setup :prepare_destination
 
   def test_setup_generator
