@@ -1,5 +1,5 @@
 module Emailvision4rails
-	class Setup < Rails::Generators::Base
+	class SetupGenerator < Rails::Generators::Base
 
 		source_root File.expand_path('../templates', __FILE__)
 
