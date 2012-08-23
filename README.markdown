@@ -210,3 +210,5 @@ Author
 ------
 
 Bastien Gysler :: [bastiengysler.com](http://www.bastiengysler.com/) :: @basgys
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/29de0b7cb36b0eb1bdd31740b3056f71 "githalytics.com")](http://githalytics.com/basgys/emailvision4rails)
