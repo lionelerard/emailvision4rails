@@ -25,13 +25,16 @@ class Emailvision4rails::Campaign < Emailvision4rails::Base
 		:send_date
 	)
 
+	validates_numericality_of(
+		:mailinglist_id,
+		:message_id
+	)
+
 	validate do
 		if send_date.blank? or (send_date < Time.now+5.minutes)
 			errors.add(:send_date, "must be more than 5 minutes in the future")
 		end
 	end	
-
-	# Validate format of email address
 
 	def initialize(payload = {})
 		payload.each do |attr, val|
