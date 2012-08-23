@@ -135,4 +135,5 @@ DEPENDENCIES
   premailer (~> 1.7)
   pry
   rails (= 3.2.8)
+  rake
   sqlite3

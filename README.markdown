@@ -3,6 +3,8 @@ Emailvision ruby on rails library
 
 Emailvision4rails is a library used to manage messages and campaigns or more simply newsletters from your rails application.
 
+[![Build Status](https://secure.travis-ci.org/basgys/emailvision4rails.png)](http://travis-ci.org/basgys/emailvision4rails)
+
 Install
 -------
 
