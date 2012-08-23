@@ -25,7 +25,11 @@ class Emailvision4rails::Campaign < Emailvision4rails::Base
 		:send_date
 	)
 
-	validate :send_date_must_be_in_the_future, :message => "must be more than 5 minutes in the future"
+	validate do
+		if send_date.blank? or (send_date < Time.now+5.minutes)
+			errors.add(:send_date, "must be more than 5 minutes in the future")
+		end
+	end	
 
 	# Validate format of email address
 
@@ -44,12 +48,5 @@ class Emailvision4rails::Campaign < Emailvision4rails::Base
 		else
 			false
 		end
-	end
-
-	private
-
-	def send_date_must_be_in_the_future
-		# Adds 5 minutes to ensure futurness of send date between validation and publication
-		send_date.present? ? (send_date > Time.now+5.minutes) : false
 	end
 end
