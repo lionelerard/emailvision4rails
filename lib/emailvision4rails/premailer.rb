@@ -3,7 +3,7 @@ module Emailvision4rails
     def initialize(html)
       ::Premailer.send(:include, Adapter.find(Adapter.use))
 
-      encoding = Configuration.encoding.upcase
+      encoding = Configuration.encoding.try(:upcase)
       options = {
         :adapter => :hpricot,
         :warn_level => Premailer::Warnings::SAFE,
