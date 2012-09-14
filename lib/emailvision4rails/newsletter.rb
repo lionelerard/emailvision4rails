@@ -15,8 +15,9 @@ module Emailvision4rails
 			message.create
 
 			# Campaign
-			campaign.message_id = message.id			
+			campaign.message_id = message.id
 			campaign.create
+			campaign.post
 
 			true
 		end
