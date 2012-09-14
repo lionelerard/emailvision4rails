@@ -1,6 +1,7 @@
 class Emailvision4rails::Campaign < Emailvision4rails::Base
 	
 	attributes(
+		:id,
 		:name,
 		:mailinglist_id,
 		:message_id, 
@@ -42,10 +43,14 @@ class Emailvision4rails::Campaign < Emailvision4rails::Base
 		end
 	end
 
+	def post
+		api.get.campaign.post(uri: [id]).call
+	end		
+
 	def create
 		if valid?
 			run_callbacks :create do
-				api.post.campaign.create(:body => {:campaign => self.to_emv}).call
+				self.id = api.post.campaign.create(:body => {:campaign => self.to_emv}).call
 			end
 			true
 		else
