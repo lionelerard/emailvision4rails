@@ -12,11 +12,15 @@ module Emailvision4rails
 			campaign = Campaign.new(payload[:campaign])
 
 			# Message
-			message.create
+			unless message.create
+				return false
+			end
 
 			# Campaign
 			campaign.message_id = message.id
-			campaign.create
+			unless campaign.create
+				return false				
+			end
 			campaign.post
 
 			true
