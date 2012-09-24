@@ -41,8 +41,6 @@ module Emailvision4rails
 		end
 
 		def render
-			lookup_context.locale = params.delete(:language) if params[:language]
-
 			RenderedView.new(collect_responses(lookup_context.formats))		
 		end
 
