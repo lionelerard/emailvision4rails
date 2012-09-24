@@ -17,8 +17,8 @@ module Emailvision4rails
 	autoload :Message, 'emailvision4rails/models/message'
 	autoload :Campaign, 'emailvision4rails/models/campaign'
 
-	# Newsletters (Controller)
-	autoload :AbstractNewsletter, 'emailvision4rails/newsletters/abstract_newsletter'
+	# Controllers
+	autoload :BaseController, 'emailvision4rails/controllers/base_controller'
 
 	ActionView::Template.register_template_handler :emv, EmvHandler	
 

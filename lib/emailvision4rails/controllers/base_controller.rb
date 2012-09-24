@@ -3,7 +3,7 @@ require 'action_view'
 require 'action_mailer/collector'
 
 module Emailvision4rails
-	class AbstractNewsletter < ::AbstractController::Base
+	class BaseController < ::AbstractController::Base
 		abstract!
 
 		include AbstractController::Logger
@@ -32,7 +32,6 @@ module Emailvision4rails
 	  def initialize(method_name=nil, *args)
 	    super()
 	    lookup_context.formats = [:text, :html] # Restrict rendering formats to html and text
-	    @_message = Newsletter.new
 	    process(method_name, *args) if method_name
 	  end
 
@@ -41,17 +40,10 @@ module Emailvision4rails
 			super(method_name, *args)
 		end
 
-		def newsletter(params = {})
-			message = @_message
-
+		def render
 			lookup_context.locale = params.delete(:language) if params[:language]
 
-			responses = collect_responses(lookup_context.formats)
-
-			message.parts = responses
-			message.payload = params
-
-			message
+			RenderedView.new(collect_responses(lookup_context.formats))		
 		end
 
 		private

@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
 	def index	
-    render :file => 'standard_newsletter/daily_fr.html.emv', :layout => 'standard.html'		
+    render StandardNewsletter.daily_fr.to_html
 	end
 
 end
