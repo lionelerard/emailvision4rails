@@ -41,7 +41,7 @@ module Emailvision4rails
 		end
 
 		def render
-			RenderedView.new(collect_responses(lookup_context.formats))		
+			::Emailvision4rails::RenderedView.new(collect_responses(lookup_context.formats))		
 		end
 
 		private
