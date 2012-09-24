@@ -10,7 +10,7 @@ module Emailvision4rails
 	autoload :Newsletter, 'emailvision4rails/newsletter'
 	autoload :Configuration, 'emailvision4rails/configuration'
 	autoload :Premailer, 'emailvision4rails/premailer'
-	autoload :RenderedView, 'emailvision4rails/rendered_view'
+	autoload :RenderedViews, 'emailvision4rails/rendered_views'
 	autoload :Version, 'emailvision4rails/version'	
 
 	# Models

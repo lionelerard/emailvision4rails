@@ -23,11 +23,13 @@ module Emailvision4rails
 
 			def method_missing(method, *args)
 				return super unless respond_to?(method)
-				new(method, *args).message
+				instance = new(method, *args)
+				instance.render_views
+				instance.rendered_views
 			end		
 		end
 
-		attr_internal :message
+		attr_internal :rendered_views
 
 	  def initialize(method_name=nil, *args)
 	    super()
@@ -40,8 +42,8 @@ module Emailvision4rails
 			super(method_name, *args)
 		end
 
-		def render
-			::Emailvision4rails::RenderedView.new(collect_responses(lookup_context.formats))		
+		def render_views
+			self.rendered_views = ::Emailvision4rails::RenderedViews.new(collect_responses(lookup_context.formats))
 		end
 
 		private

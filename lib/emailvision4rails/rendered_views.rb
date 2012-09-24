@@ -1,5 +1,5 @@
 module Emailvision4rails
-	class RenderedView
+	class RenderedViews
 
 		attr_accessor :parts
 
