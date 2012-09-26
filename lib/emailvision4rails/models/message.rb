@@ -60,14 +60,10 @@ class Emailvision4rails::Message < Emailvision4rails::Base
 	end
 
 	def destroy
-		if valid?
-			run_callbacks :destroy do
-				self.id = api.get.message.deleteMessage(:uri => [self.id]).call
-			end
-			true
-		else
-			false
+		run_callbacks :destroy do
+			self.id = api.get.message.deleteMessage(:uri => [self.id]).call
 		end
+		true
 	end	
 
 	# Maybe in a helper?

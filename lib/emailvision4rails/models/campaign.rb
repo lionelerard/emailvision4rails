@@ -63,13 +63,8 @@ class Emailvision4rails::Campaign < Emailvision4rails::Base
 	end
 
 	def destroy
-		if valid?
-			run_callbacks :destroy do
-				self.id = api.get.campaign.delete(:uri => [self.id]).call
-			end
-			true
-		else
-			false
+		run_callbacks :destroy do
+			self.id = api.get.campaign.delete(:uri => [self.id]).call
 		end
-	end
+		true
 end
