@@ -19,7 +19,7 @@ class Emailvision4rails::Base
 
 	attribute_method_suffix '?'
 
-	define_model_callbacks :create, :update
+	define_model_callbacks :create, :update, :destroy
 
 	def self.attributes(*names)
 		attr_accessor *names
