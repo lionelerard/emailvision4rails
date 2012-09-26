@@ -67,4 +67,5 @@ class Emailvision4rails::Campaign < Emailvision4rails::Base
 			self.id = api.get.campaign.delete(:uri => [self.id]).call
 		end
 		true
+	end
 end
