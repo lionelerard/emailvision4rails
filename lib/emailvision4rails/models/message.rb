@@ -59,6 +59,17 @@ class Emailvision4rails::Message < Emailvision4rails::Base
 		end
 	end
 
+	def destroy
+		if valid?
+			run_callbacks :destroy do
+				self.id = api.get.message.deleteMessage(:uri => [self.id]).call
+			end
+			true
+		else
+			false
+		end
+	end	
+
 	# Maybe in a helper?
 	def mirror_url_id
 		@mirror_url_id ||= api.get.url.create_and_add_mirror_url(uri: [message_id, 'mirror_url']).call

@@ -45,12 +45,27 @@ class Emailvision4rails::Campaign < Emailvision4rails::Base
 
 	def post
 		api.get.campaign.post(uri: [id]).call
-	end		
+	end
+
+	def unpost
+		api.get.campaign.unpost(uri: [id]).call
+	end
 
 	def create
 		if valid?
 			run_callbacks :create do
 				self.id = api.post.campaign.create(:body => {:campaign => self.to_emv}).call
+			end
+			true
+		else
+			false
+		end
+	end
+
+	def destroy
+		if valid?
+			run_callbacks :destroy do
+				self.id = api.get.campaign.delete(:uri => [self.id]).call
 			end
 			true
 		else
