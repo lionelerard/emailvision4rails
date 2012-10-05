@@ -29,6 +29,20 @@ class Emailvision4rails::Message < Emailvision4rails::Base
 		:reply_to_email
 	)  	
 
+	# See emv official doc
+	LANG_MAPPER = {
+		en: 1,
+		en_us: 1,
+		en_uk: 2,
+		fr: 3,
+		de: 4
+	}.freeze
+
+	LINK_TYPE_MAPPER = {
+		link: true,
+		button: false
+	}.freeze
+
 	# Validate format of email address	
 
 	def initialize(body = "", payload = {})
@@ -66,17 +80,35 @@ class Emailvision4rails::Message < Emailvision4rails::Base
 		true
 	end	
 
-	# Maybe in a helper?
+	# Deprecated
 	def mirror_url_id
-		@mirror_url_id ||= api.get.url.create_and_add_mirror_url(uri: [message_id, 'mirror_url']).call
+		warn "[DEPRECATION] mirror_url_id is deprecated. Use create_and_add_mirror_url instead"
+		@mirror_url_id ||= create_and_add_mirror_url
 	end
 
+	# Replaces the first occurrence of &&& with 
+	# [EMV LINK]ORDER[EMV /LINK] (where ORDER is the mirror link order number).
+	def create_and_add_mirror_url
+		api.get.url.create_and_add_mirror_url(uri: [id, 'mirror_url']).call
+	end
+
+	# Replaces the first occurrence of &&& with [EMV SHARE lang=xx]
+	# Parameters :	
+	# - type : :link, :button
+	# - lang : :en, :fr, :de (optionnal)
+	# - url : The url of the share link
+	def create_and_add_share_link(type, lang, url)		
+		type = LINK_TYPE_MAPPER[type.to_sym]
+		lang = LANG_MAPPER[lang.to_sym]
+		api.get.add_share_link(uri: [id, type, url,lang]).call
+	end	
+
 	def track_links
-		emv.get.message.track_all_links(id: message_id).call
+		emv.get.message.track_all_links(id: id).call
 	end
 
 	def persisted?
-		message_id.present?
+		id.present?
 	end
 
 end
