@@ -114,7 +114,7 @@ class Emailvision4rails::Message < Emailvision4rails::Base
 	end	
 
 	def track_links
-		emv.get.message.track_all_links(id: id).call
+		api.get.message.track_all_links(id: id).call
 	end
 
 	def persisted?
