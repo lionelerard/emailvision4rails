@@ -62,10 +62,25 @@ class Emailvision4rails::Campaign < Emailvision4rails::Base
 		end
 	end
 
+	def update
+		if valid? and persisted?
+			run_callbacks :update do
+				self.id = api.post.campaign.update(:body => {:campaign => self.to_emv}).call
+			end
+			true
+		else
+			false
+		end
+	end	
+
 	def destroy
 		run_callbacks :destroy do
 			self.id = api.get.campaign.delete(:uri => [self.id]).call
 		end
 		true
+	end
+
+	def persisted?
+		id.present?
 	end
 end

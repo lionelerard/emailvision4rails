@@ -66,7 +66,7 @@ class Emailvision4rails::Message < Emailvision4rails::Base
 	def update
 		if valid? and persisted?
 			run_callbacks :update do
-				api.post.message.create(:body => self.to_emv).call
+				api.post.message.update(:body => self.to_emv).call
 			end			
 		else
 			false
