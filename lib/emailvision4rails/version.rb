@@ -1,3 +1,3 @@
 module Emailvision4rails
-  Version = VERSION = '1.0.13'
+  Version = VERSION = '1.0.14'
 end
