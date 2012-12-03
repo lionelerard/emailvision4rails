@@ -113,6 +113,24 @@ class Emailvision4rails::Message < Emailvision4rails::Base
 		api.get.add_share_link(uri: [id, type, url,lang]).call
 	end	
 
+	# This method retrieves the unused tracked links
+	# It returns an array of link ids
+	def unused_tracked_links
+		result = api.get.message.get_all_unused_tracked_links(uri: [id]).call
+		
+		result["entities"]["id"]
+	rescue NoMethodError
+		[]
+	end
+
+	# This method deletes a URL. 
+	# You can only delete a message's URL, if the message is not associated to a campaign.
+	# Parameter :
+	# - link_id : The ID of the link to delete
+	def delete_link(link_id)
+		api.get.url.delete_url(uri: [id, link_id]).call
+	end
+
 	def track_links
 		api.get.message.track_all_links(id: id).call
 	end
