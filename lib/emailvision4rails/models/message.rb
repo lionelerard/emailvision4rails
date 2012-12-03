@@ -117,6 +117,10 @@ class Emailvision4rails::Message < Emailvision4rails::Base
 		api.get.message.track_all_links(id: id).call
 	end
 
+	def untrack_links
+		api.get.message.untrack_all_links(id: id).call
+	end
+
 	def persisted?
 		id.present?
 	end
