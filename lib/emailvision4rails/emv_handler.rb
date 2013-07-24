@@ -19,7 +19,7 @@ module Emailvision4rails
         #puts "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;#{eval(compiled_source)};end, {}, nil).execute"
         puts '*'*100
 
-        "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;#{compiled_source};end, {}, nil).execute"
+        "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;#{compiled_source};end, {}, nil).execute" unless compiled_source.blank?
 			else
 				compiled_source
 			end
