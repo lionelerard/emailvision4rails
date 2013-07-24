@@ -56,7 +56,11 @@ module Emailvision4rails
 			responses = {}
 			formats.each do |f|
 				collector.send(f)
-				responses[f] = collector.responses.last[:body]
+        if f == :html
+          responses[f] = Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], collector.responses.last[:body], {}, nil).execute
+        else
+          responses[f] = collector.responses.last[:body]
+        end
 			end
       puts responses
 			responses
