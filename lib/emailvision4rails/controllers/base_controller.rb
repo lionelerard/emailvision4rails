@@ -25,7 +25,6 @@ module Emailvision4rails
 				return super unless respond_to?(method)
 				instance = new(method, *args)
 				instance.render_views
-        puts instance.rendered_views
 				instance.rendered_views
 			end		
 		end
@@ -62,7 +61,6 @@ module Emailvision4rails
           responses[f] = collector.responses.last[:body]
         end
 			end
-      puts responses
 			responses
 		end
 
