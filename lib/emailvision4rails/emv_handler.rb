@@ -12,6 +12,7 @@ module Emailvision4rails
       compiled_source = erb_handler.call(template)
       p compiled_source
       p '*'*100
+      output_buffer = nil
       p eval(compiled_source)
       p '*'*100
       p "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;#{eval(compiled_source)};end, {}, nil).execute"
