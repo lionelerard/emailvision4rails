@@ -7,17 +7,17 @@ module Emailvision4rails
 		end
 
 		def self.call(template)
+      compiled_source = erb_handler.call(template)
       if template.formats.include?(:html)
-        p template
-        p '*'*100
-        compiled_source = erb_handler.call(template)
-        p compiled_source
-        p '*'*100
+        puts template
+        puts '*'*100
+        puts compiled_source
+        puts '*'*100
         output_buffer = nil
-        p eval(compiled_source)
-        p '*'*100
-        p "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;#{eval(compiled_source)};end, {}, nil).execute"
-        p '*'*100
+        puts eval(compiled_source)
+        puts '*'*100
+        puts "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;#{eval(compiled_source)};end, {}, nil).execute"
+        puts '*'*100
 
         "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;#{eval(compiled_source)};end, {}, nil).execute"
 			else
