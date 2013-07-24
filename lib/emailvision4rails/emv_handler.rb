@@ -8,7 +8,7 @@ module Emailvision4rails
 
 		def self.call(template)
       compiled_source = erb_handler.call(template)
-      if template.formats.include?(:html)
+      if false and template.formats.include?(:html)
         puts template
         puts '*'*100
         puts compiled_source
