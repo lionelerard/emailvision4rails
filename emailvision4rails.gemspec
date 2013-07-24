@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
   s.add_dependency("rails", ">= 3.2")
 
   s.add_dependency("emailvision", "~> 2.1.0")
-  s.add_dependency("premailer", "~> 1.7.0")
+  s.add_dependency("roadie", "~> 2.4.1")
   s.add_dependency("hpricot", "~> 0.8.0")
 end
