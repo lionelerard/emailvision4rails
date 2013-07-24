@@ -9,7 +9,7 @@ module Emailvision4rails
 		def self.call(template)
 			compiled_source = erb_handler.call(template)
 			if template.formats.include?(:html)
-				"Emailvision4rails::Premailer.new((begin;#{compiled_source};end)).to_inline_css"
+        "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], #{compiled_source}, {}, nil).execute"
 			else
 				compiled_source
 			end

@@ -5,7 +5,7 @@ gem "capybara", ">= 0.4.0"
 gem "sqlite3"
 
 gem "emailvision", "~> 2.1.0"
-gem "premailer", "~> 1.7.0"
+gem "roadie", "~> 2.4.1"
 gem "hpricot", "~> 0.8.0"
 
 group :test do

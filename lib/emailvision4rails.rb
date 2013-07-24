@@ -1,6 +1,6 @@
 require 'rails'
 require 'action_view'
-require 'premailer'
+require 'roadie'
 require 'emailvision'
 
 module Emailvision4rails
@@ -9,7 +9,6 @@ module Emailvision4rails
 	autoload :Collector, 'emailvision4rails/collector'
 	autoload :Newsletter, 'emailvision4rails/newsletter'
 	autoload :Configuration, 'emailvision4rails/configuration'
-	autoload :Premailer, 'emailvision4rails/premailer'
 	autoload :RenderedViews, 'emailvision4rails/rendered_views'
 	autoload :Version, 'emailvision4rails/version'	
 
