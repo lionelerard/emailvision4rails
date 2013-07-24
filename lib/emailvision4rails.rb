@@ -1,6 +1,5 @@
 require 'rails'
 require 'action_view'
-require 'roadie'
 require 'emailvision'
 
 module Emailvision4rails
