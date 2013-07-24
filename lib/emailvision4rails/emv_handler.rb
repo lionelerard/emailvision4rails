@@ -14,12 +14,12 @@ module Emailvision4rails
         puts compiled_source
         puts '*'*100
         output_buffer = nil
-        puts eval(compiled_source)
+        #puts eval(compiled_source)
         puts '*'*100
-        puts "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;#{compiled_source};end, {}, nil).execute"
+        #puts "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;\"#{compiled_source}\";end, {}, nil).execute"
         puts '*'*100
 
-        "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;#{compiled_source};end, {}, nil).execute" unless compiled_source.blank?
+        "Roadie::Inliner.new(Roadie::AssetPipelineProvider.new, [], begin;\"#{compiled_source}\";end, {}, nil).execute" unless compiled_source.blank?
 			else
 				compiled_source
 			end
